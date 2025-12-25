@@ -1,0 +1,47 @@
+BeyondChats Assignment – Project Documentation
+Author: Atharva Borkar
+
+Project Overview
+This project is a multi-phase system designed to demonstrate backend, service, and frontend development using modern technologies. The repository is monolithic and contains three phases: Laravel Backend, Node.js Service, and React Frontend.
+Folder Structure
+beyondchats-assignment/
+├── laravel-backend-clean
+├── node-service
+├── react-frontend
+└── README.md
+Phase 1 – Laravel Backend
+Phase 1 implements the backend using Laravel. It exposes REST APIs for articles, handles database migrations, and manages persistence.
+How to Run Phase 1 (Local)
+cd laravel-backend-clean
+php artisan serve
+
+Server runs at: http://127.0.0.1:8000
+API endpoint: http://127.0.0.1:8000/api/articles
+Phase 2 – Node.js Service
+Phase 2 is a Node.js background service that consumes backend APIs and simulates AI-based content processing. This phase does not include a UI and is validated via logs.
+How to Run Phase 2 (Local)
+cd node-service
+node index.js
+
+Expected output includes logs for fetching and processing articles.
+Phase 3 – React Frontend
+Phase 3 implements a React-based frontend that fetches articles from the backend and displays them in a browser UI.
+How to Run Phase 3 (Local)
+cd react-frontend
+npm install
+npm start
+
+Frontend runs at: http://localhost:3000
+Architecture Overview
+React Frontend → Laravel Backend → Database
+Node.js Service → Laravel Backend → Logs
+Known Limitations
+• Backend runs locally
+• Phase 2 validated via logs
+• Deployment is optional as per assignment guidelines
+Future Improvements
+• Deploy backend publicly
+• Add authentication
+• Enhance AI logic
+• Improve frontend UI/UX
+ I am Also adding the ss of each phase in the folder 
